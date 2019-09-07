@@ -25,6 +25,9 @@ input[type=submit]:hover {
 }
 
 .container {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
     margin-right: auto;
     margin-left: auto;
     width: 960px;
@@ -36,4 +39,44 @@ input[type=submit]:hover {
 .contactmebackground {
     background-image: url("../images/email-pattern.png");
     background-repeat: repeat;
+    background-size: cover;
 }
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    padding-bottom: 3em;
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
+
+  .footer {
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      color: lavender;
+      background-color: #777777;
+      text-align: center;
+      border-top: 8px solid #4aaaa5;
+  }
+
+  .profilepic {
+      float: left;
+      height: 200px;
+      width: 200px;
+  }
