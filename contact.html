@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<div class="contactmebackground clearfix">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <div class="contactmebackground clearfix">
     <body>
-        <div class="wrapper">
-            <div class="header">
-                <h1>Grayson McMurry</h1>
-                    <p><a href="index.html">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                    </p>
-            </div>
-            <hr>
-            <div class="secondheader clearfix">
-                <h1>Contact Me</h1>
-            </div>
-            <hr>
+      <div class="wrapper">
+        <div class="header">
+          <h1>Grayson McMurry</h1>
+          <div class="aboutportfoliocontact">
+            <p>
+              <a href="index.html">About</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+            </p>
+          </div>
+        </div>
 
-            <div class="container clearfix">
-                    <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-                    <label for="city">City</label>
-                    <select id="city" name="city">
-                        <option value="dallas">Dallas</option>
-                        <option value="chicago">Chicago</option>
-                        <option value="california">California</option>
-                        <option value="other">Other</option>
-                    </select>
-          
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-                    <input type="submit" value="Submit">
-                    </form>
-            </div>
-        </div>    
+        <div class="secondheader clearfix">
+          <h1>Contact Me</h1>
+        </div>
+
+        <div class="container clearfix">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="dallas">Dallas</option>
+              <option value="chicago">Chicago</option>
+              <option value="california">California</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     </body>
-
-        <footer class="footer clearfix">Copyright©</footer>
-</div>
+    <footer class="footer clearfix">Copyright©</footer>
+  </div>
 </html>
