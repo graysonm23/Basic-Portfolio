@@ -46,8 +46,11 @@ input[type="submit"]:hover {
 /* background image over the entire body */
 .contactmebackground {
   background-image: url(../images/email-pattern.png); /*using the email background in my images folder*/
-  background-repeat: no-repeat; /*telling the image to only show once, not to repeat in background*/
+  background-repeat: repeat; /*telling the image to only show once, not to repeat in background*/
   background-size: cover; /*telling the image to cover the entire screen*/
+  position: absolute;
+  background-position: center;
+  background-size: 100%;
 }
 /* background image over the entire body*/
 
@@ -70,7 +73,8 @@ body {
   height: 100%;
 }
 .wrapper {
-  min-height: 100%;
+  justify-content: center;
+  margin-top: 40px;
   position: relative;
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
