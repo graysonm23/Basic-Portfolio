@@ -8,97 +8,64 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body background="../Basic-Portfolio/assets/images/email-pattern.png">
-    <div class="wrapper clearfix">
-      <div class="header clearfix">
-        <h1>Grayson McMurry</h1>
-        <div class="aboutportfoliocontact">
-          <p>
-            <a class="border-right about" href="index.html">About</a>
-            <a class="border-right portfolio" href="portfolio.html"
-              >Portfolio</a
-            >
-            <a class="contact" href="contact.html">Contact</a>
-          </p>
+  <body>
+    <header>
+      <nav style="width: 960px; margin: auto; padding-top: 20px;">
+        <div id="myName">
+          Grayson McMurry
         </div>
-      </div>
-      <div class="secondheader clearfix">
-        <h1>About Me</h1>
-      </div>
-      <div class="maincontent">
-        <div class="propicaside">
-          <img
-            class="profilepic clearfix"
-            alt="profile picture"
-            src="assets/images/profile pic.jpg"
-            style="float:left; margin-right: 10px; margin-bottom: 5px;"
-          />
+        <div id="myNav">
+          <!--id tag used because the content is unique-->
+          <a href="index.html">About</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="contact.html">Contact</a>
         </div>
-        <div class="lorem clearfix">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-            blanditiis adipisci facilis porro consequuntur! Id aspernatur,
-            recusandae quo in ab aperiam aliquid numquam vel quas, sint sit
-            aliquam molestias modi.
+      </nav>
+      <div class="clear"></div>
+      <hr style="margin: 0px;" />
+      <!--line in html styled-->
+    </header>
+    <div class="clear"></div>
+    <section id="main">
+      <!--id tag used because the content is unique, id was used to add background image-->
+      <section class="mainBody">
+        <!--class used to style the frame of the body, making it a certain width etc..-->
+        <header class="title">
+          ABOUT ME
+        </header>
+        <hr style="margin: 0px 30px 30px 30px;" />
+        <!--line in html styled-->
+        <article style="margin: 0px 30px">
+          <!--an article tag thats used for content in the main is good for google search engine-->
+          <span>
+            <img
+              align="left"
+              alt="profile picture"
+              src="assets/images/profile pic.jpg"
+            />
+            <!--align used to set the image on the left side of the content-->
+          </span>
+          <p style="padding-left: 250px">
+            <!--padding used to help float the img and text next to each other-->
+            I'm a computer guy who loves all kinds of technology. I am studying
+            part-time at SMU to be a Full-Stack Developer. When I am not
+            learning, I am working full-time at Central Market. I love to
+            discover new food flavors and new technologies. I am consistently
+            looking for things to do. When I am at home I like to code and eat.
+            It's pretty much my lifestyle. If I go out, it must consist of food
+            of some sort. The main food groups for me is pizza, Asian-inspired
+            dishes, and coffee.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            eius architecto dignissimos voluptatum maiores assumenda error
-            similique deleniti quas sequi. Laborum magni sit iusto. Laudantium
-            officiis nobis totam velit praesentium. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-          </p>
-          <p>
-            Fugiat saepe veritatis ab inventore esse aliquid, odit quidem
-            assumenda impedit. Dicta quasi exercitationem et, impedit
-            voluptatibus voluptates reprehenderit cumque sapiente amet.
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            commodi nam vel mollitia dolorem architecto voluptatibus. Laudantium
-            quibusdam voluptates, delectus tenetur nostrum dolorum! Molestiae
-            velit omnis quisquam aspernatur, maiores minus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-            assumenda facilis! A aliquam perspiciatis quasi dolores ducimus
-            commodi, natus quos magnam praesentium labore, facilis accusantium
-            laudantium reprehenderit sapiente quaerat numquam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-            maiores, excepturi voluptas facere repellat, sunt doloremque
-            explicabo nobis voluptatem facilis exercitationem ex eius ab. Aut
-            animi illo ab. Minus, non.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            minima alias voluptas dignissimos obcaecati maiores nihil facilis!
-            Ab nihil doloremque, consequuntur, fuga soluta impedit animi
-            sapiente officia accusamus architecto ex.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            minima alias voluptas dignissimos obcaecati maiores nihil facilis!
-            Ab nihil doloremque, consequuntur, fuga soluta impedit animi
-            sapiente officia accusamus architecto ex.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            minima alias voluptas dignissimos obcaecati maiores nihil facilis!
-            Ab nihil doloremque, consequuntur, fuga soluta impedit animi
-            sapiente officia accusamus architecto ex.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            minima alias voluptas dignissimos obcaecati maiores nihil facilis!
-            Ab nihil doloremque, consequuntur, fuga soluta impedit animi
-            sapiente officia accusamus architecto ex.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer clearfix">Copyright©</footer>
+        </article>
+        <!--closing article tag-->
+      </section>
+    </section>
+    <div class="clear"></div>
+    <!--this is our clearfix-->
+    <footer class="footer">
+      <!--2 tags made for footer to style seperately-->
+      <span id="copyright">Copyright©</span>
+      <!--span tag used to decorate an inline element in css, if div tag was used then it would be considered as a block element-->
+    </footer>
   </body>
 </html>

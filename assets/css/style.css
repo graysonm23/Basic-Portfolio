@@ -1,151 +1,131 @@
-/* ^^^^^^ contact me form ^^^^^^^^^^*/
-/* Style inputs with type="text", select elements and textareas */
+/* Contact me form */
 input[type="text"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4aaaa5;
-  color: #ffffff;
-  padding: 12px 20px;
   border: none;
+  background: #4aaaa5;
+  padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background: #258b86;
 }
 
-/* Add a background color and some padding around the form */
 .container {
-  display: flex; /*telling the contact form to display in-line*/
-  flex-direction: column; /*making sure the flex is displayed up and down*/
-  /* justify-content: center; */ /*this is un-needed, undo if need be*/
-  /* align-items: center; */ /*this is un-needed, undo if need be*/
-  border-radius: 5px;
-  padding: 20px;
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
-}
-/*^^^^^ contact me form ^^^^^^^^^*/
-
-.aboutportfoliocontact {
-  float: right;
-  display: flex;
-  margin-right: 15px;
-  position: absolute;
-  top: 150px;
-  right: 30px;
+  padding: 50px;
+  padding-top: 15px;
 }
 
-.border-right {
-  color: #666666;
-  padding-right: 10px;
-  border-right: 2px solid #afaaaa;
+label {
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.clearfix::before {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* ^^^^^^ contact me form ^^^^^^^^^^*/
+/* decorating the nav bar */
 html,
-.header body {
-  max-width: 960px;
-  margin: 0 auto !important;
-  float: none !important;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-.wrapper {
-  justify-content: center;
-  position: relative;
-  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+a:link {
+  color: #808080;
+  text-decoration: none;
+}
+a:visited {
+  color: #808080;
+  text-decoration: none;
+}
+a:hover {
+  color: #808080;
+  text-decoration: underline;
+}
+a:active {
+  color: #808080;
+  text-decoration: none;
+}
+/*^^^^^^^^^ decorating the nav bar ^^^^^^^^^ */
+#myName {
+  float: left;
+  background-color: #4aaaa5;
+  margin: auto;
+  text-align: center;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  color: white;
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
+#myNav {
+  float: right;
+  margin: auto;
+  text-align: center;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  padding: 30px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+
+#main {
+  background-image: url("../images/email-pattern.png");
+  width: 100%;
+  height: 80%;
+  padding-top: 20px;
+}
+
+.mainBody {
+  border: 1px solid lightgrey;
+  background-color: white;
+  width: 960px;
+  margin: auto;
+  height: 580px;
+  padding-bottom: 50px;
+}
+
+.title {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  color: #4aaaa5;
+  font-size: 25px;
+  font-weight: bold;
+  margin: auto;
+  padding: 30px;
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* footer fixed at the bottom of the page css */
 .footer {
   border-top: 8px solid #4aaaa5;
-  position: sticky;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background-color: #666666;
+  color: white;
+  vertical-align: bottom;
   text-align: center;
-  line-height: 90px;
 }
 
-.header {
-  font-family: "Georgia", Times, "Times New Roman", serif;
-}
-
-p {
-  float: right;
-  overflow: auto;
-}
-
-h1 {
-  border-bottom: 8px solid #666666;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 15px;
-  margin: 3px;
-  line-height: 90px;
-  text-align: center;
-  float: left;
-  height: 75px;
-  display: block;
-  background-color: #4aaaa5;
-}
-
-.contact {
-  color: #666666;
-}
-figure {
-  position: relative;
-  width: 160px;
-}
-
-figcaption {
+#copyright {
   position: absolute;
   bottom: 0;
-  font-size: 24px;
-  font-family: "vedana";
-  background: #4aaaa5;
-  padding: 10px 20px;
-  width: 100%;
-  text-align: center;
-}
-
-.containerforimg {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  justify-content: center;
-}
-
-.maincontent {
-  display: inline-flex;
-  overflow: auto;
+  padding-bottom: 10px;
 }
