@@ -47,6 +47,11 @@ input[type="submit"]:hover {
   margin-right: 15px;
 }
 
+.border-right {
+  padding-right: 5px;
+  border-right: 2px solid red;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -87,4 +92,16 @@ html,
 
 .header {
   font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+p {
+  float: right;
+  overflow: auto;
+}
+
+h1 {
+  float: left;
+  height: 75px;
+  display: block;
+  background-color: #ffffff;
 }
