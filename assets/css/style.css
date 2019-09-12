@@ -124,6 +124,7 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  border-radius: 30px;
 }
 /*^^^ styling images on portfolio.html ^^^*/
 /* clear fix */
